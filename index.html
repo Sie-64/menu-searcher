@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>菜单搜索器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ 菜单搜索</h1>
+    <p>输入菜品名称，快速查找你想要的！</p>
+    
+    <!-- 搜索框 -->
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="搜索菜品（例如：披萨、牛肉、面条...）">
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- 菜品列表容器 -->
+    <div id="menu-container" class="menu-grid">
+      <!-- 菜品 1 -->
+      <div class="menu-item">
+        <div class="item-img">🍕</div>
+        <h3>意大利披萨</h3>
+        <p>经典意式风味，芝士浓郁</p>
+      </div>
+      <!-- 菜品 2 -->
+      <div class="menu-item">
+        <div class="item-img">🍔</div>
+        <h3>安格斯牛肉堡</h3>
+        <p>120% 纯牛肉，鲜嫩多汁</p>
+      </div>
+      <!-- 菜品 3 -->
+      <div class="menu-item">
+        <div class="item-img">🍜</div>
+        <h3>日式豚骨拉面</h3>
+        <p>浓郁高汤，叉烧软糯</p>
+      </div>
+      <!-- 菜品 4 -->
+      <div class="menu-item">
+        <div class="item-img">🥗</div>
+        <h3>牛油果鲜虾沙拉</h3>
+        <p>低卡健康，新鲜爽口</p>
+      </div>
+      <!-- 菜品 5 -->
+      <div class="menu-item">
+        <div class="item-img">🍣</div>
+        <h3>三文鱼寿司</h3>
+        <p>挪威空运，入口即化</p>
+      </div>
+      <!-- 菜品 6 -->
+      <div class="menu-item">
+        <div class="item-img">☕</div>
+        <h3>冰美式咖啡</h3>
+        <p>提神醒脑，冰爽解腻</p>
+      </div>
+    </div>
+    
+    <!-- 无结果提示 -->
+    <div id="no-result" class="no-result hidden">
+      😢 没有找到相关菜品，换个词试试吧！
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
