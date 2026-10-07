@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <!-- 引入 Google 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-utensils"></i> Recipe Finder</h1>
+            <p>Find delicious recipe from around world</p>
+        </header>
+
+        <p class="api-link">Data From <a href="https://www.themealdb.com/api.php" target="_blank">The MealDB</a></p>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for meals or keywords" />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- 错误提示框 / 搜索状态提示框 (默认隐藏) -->
+        <div id="error-container" class="hidden">
+            <p>Please enter a search term</p>
+        </div>
+
+        <!-- 搜索结果标题 -->
+        <div id="result-heading"></div>
+
+        <!-- 菜品卡片网格容器 -->
+        <div id="meals" class="meals-container"></div>
+
+        <!-- 菜品详情页 (默认隐藏) -->
+        <div id="meal-details" class="hidden">
+            <button id="back-btn"><i class="fa-solid fa-arrow-left"></i> Back To Recipes</button>
+            <div class="meal-details-content"></div>
+        </div>
+    </div>
+
+    <!-- 引入外部 JS 文件 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
